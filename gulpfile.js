@@ -38,7 +38,7 @@ gulp.task('default', function(){
  .pipe(gulp.dest(paths.dist));
 });
 
-gulp.task('default', ['siamhtml','browser-sync'], function() {
+gulp.task('defaults', ['siamhtml','browser-sync'], function() {
     //gulp.watch("scss/**/*.scss", ['sass']);
     gulp.watch(['**/*.html'], browserSync.reload);
     gulp.watch(['css/**/*.css'], browserSync.reload);
